@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Waldemar Tomme",
+    "classifications": [ "Architecture", "Hexagonal", "Ports & Adapters" ],
+    "identity": "DarkLink.Templates.HexagonalArchitecture.CSharp.Empty",
+    "name": "Hexagonal Architecture (C#, Empty)",
+    "shortName": "hexagonal-cs-empty"
+}
