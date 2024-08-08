@@ -22,6 +22,9 @@
         },
         {
             "path": "NewProject.Domain/NewProject.Domain.csproj"
+        },
+        {
+            "path": "NewProject.Tests/NewProject.Tests.csproj"
         }
     ]
 }
