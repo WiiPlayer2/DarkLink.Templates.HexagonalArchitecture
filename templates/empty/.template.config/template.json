@@ -26,5 +26,13 @@
         {
             "path": "NewProject.Tests/NewProject.Tests.csproj"
         }
-    ]
+    ],
+    "symbols": {
+        "IsOpiniated": {
+            "type": "parameter",
+            "description": "Adds multiple libraries for an opiniated approach.",
+            "datatype": "bool",
+            "defaultValue": "true"
+        }
+    }
 }

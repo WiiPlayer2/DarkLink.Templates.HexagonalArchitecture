@@ -11,4 +11,10 @@
     <ProjectReference Include="../NewProject.Application.Abstractions/NewProject.Application.Abstractions.csproj" />
   </ItemGroup>
 
+<!--#if (IsOpiniated) -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.*" />
+  </ItemGroup>
+<!--#endif -->
+
 </Project>

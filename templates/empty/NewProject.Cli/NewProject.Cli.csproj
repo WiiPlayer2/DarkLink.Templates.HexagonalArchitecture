@@ -11,4 +11,11 @@
     <ProjectReference Include="../NewProject.Application/NewProject.Application.csproj" />
   </ItemGroup>
 
+<!--#if (IsOpiniated) -->
+  <ItemGroup>
+    <PackageReference Include="LanguageExt.Sys" Version="4.*" />
+    <PackageReference Include="System.CommandLine.Hosting" Version="0.4.0-alpha.22272.1" />
+  </ItemGroup>
+<!--#endif -->
+
 </Project>

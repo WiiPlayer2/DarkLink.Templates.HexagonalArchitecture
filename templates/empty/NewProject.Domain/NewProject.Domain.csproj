@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+<!--#if (IsOpiniated) -->
+  <ItemGroup>
+    <PackageReference Include="FunicularSwitch.Generators" Version="4.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="LanguageExt.Core" Version="4.*" />
+    <PackageReference Include="Vogen" Version="4.*" />
+  </ItemGroup>
+<!--#endif -->
 </Project>

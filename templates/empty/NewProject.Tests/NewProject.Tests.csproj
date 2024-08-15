@@ -14,10 +14,19 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
     <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+<!--#if (IsOpiniated)-->
+    <PackageReference Include="Moq" Version="4.*" />
+    <PackageReference Include="FluentAssertions" Version="6.*" />
+<!--#endif-->
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../NewProject.Domain/NewProject.Domain.csproj" />
+    <ProjectReference Include="../NewProject.Application/NewProject.Application.csproj" />
   </ItemGroup>
 
 </Project>
