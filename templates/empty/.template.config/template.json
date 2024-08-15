@@ -12,7 +12,8 @@
     },
     "primaryOutputs": [
         {
-            "path": "NewProject.Cli/NewProject.Cli.csproj"
+            "path": "NewProject.Cli/NewProject.Cli.csproj",
+            "condition": "(IncludeCliProject)"
         },
         {
             "path": "NewProject.Application.Abstractions/NewProject.Application.Abstractions.csproj"
@@ -28,11 +29,29 @@
         }
     ],
     "symbols": {
+        "IncludeCliProject": {
+            "type": "parameter",
+            "description": "Adds a CLI project as a frontend project.",
+            "datatype": "bool",
+            "defaultValue": "true"
+        },
         "IsOpiniated": {
             "type": "parameter",
             "description": "Adds multiple libraries for an opiniated approach.",
             "datatype": "bool",
             "defaultValue": "true"
         }
-    }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(!IncludeCliProject)",
+                    "exclude": [
+                        "NewProject.Cli/**/*"
+                    ]
+                }
+            ]
+        }
+    ]
 }
