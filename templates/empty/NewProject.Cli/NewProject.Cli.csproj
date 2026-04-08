@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,7 +13,7 @@
 
 <!--#if (IsOpiniated) -->
   <ItemGroup>
-    <PackageReference Include="LanguageExt.Sys" Version="4.*" />
+    <PackageReference Include="LanguageExt.Sys" Version="5.*" />
     <PackageReference Include="System.CommandLine.Hosting" Version="0.4.0-alpha.22272.1" />
   </ItemGroup>
 <!--#endif -->
